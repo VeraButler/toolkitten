@@ -87,24 +87,27 @@ print(fruits)
 
 # 'real array'
 
-import numpy
+#import numpy
 
-a = numpy.array([1,2,3])
-print(len(a))
+#a = numpy.array([1,2,3])
+# I = 1, V = 5, X = 10, L = 50, C = 100, D =500, M = 1000
+import math
 
+d=0
+while((d > 3000) or (d==0)):
+    d=int(input("Enter a number between 1 and 3000: "))
+rn = ""
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+decimal=[1000, 5000, 100, 50, 10, 5, 1]
+roman=["M", "D", "C", "L", "X", "V", "I"]
+i=0
+for n in decimal:
+    if(d==9):
+        rn=rn+"IX"
+        break
+    if(d==4):
+            rn=rn+"IV"
+            break
+    q= math.floor(d/n)
+    r = d % n
+    
