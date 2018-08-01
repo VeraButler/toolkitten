@@ -31,7 +31,7 @@ ask_recursively('Do you wet the bed?')
 
 
 # Reading and writing files
-
+import os
 filename = "alice_in_wonderland.txt"
 file = open(filename, "r")
 
