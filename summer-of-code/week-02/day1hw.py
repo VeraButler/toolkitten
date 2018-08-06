@@ -8,11 +8,15 @@ raw = file.read()
 #if letters match chr(i) count += count
 import itertools as it
 count = 0
-for i in it.chain(range(65, 89), range(97, 121)):
-    if i <= 89:
-       for chr(i) in raw[line]:
-           count += count
-    if i >= 97:
-        count = count + 1
-    print(chr(i) + ": " + str(count))
+#for i in it.chain(range(65, 89), range(97, 121)):
+#    if i <= 89:
+#       for chr(i) in raw[line]:
+    #        count += count
+    # if i >= 97:
+    #     count = count + 1
+    # print(chr(i) + ": " + str(count))
+
+for line in file:
+    print(line)
+print(raw)
 
