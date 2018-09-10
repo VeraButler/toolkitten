@@ -98,7 +98,7 @@ for (i = 0; i < 1000001; i++) {
 
 // Q&A
 
-Please put your questions/code here and I'll go through them ;)
+//Please put your questions/code here and I'll go through them ;)
 
 // Mara..hehe sorry
 //Than you :)
@@ -107,42 +107,22 @@ Please put your questions/code here and I'll go through them ;)
 //Which one is more efficient in terms of cpu usage?
 //CT var t0 = performance.now(); //Thank you Cristina :)
 if (condition){
-  do somehtin
+  //do somehting
 } else {}
 // CT var t1 = performance.now();
 // CT console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.");
 //or
 
 //CT var t0 = performance.now();
-var i = (condition ) ? if true : if false
-// CT var t1 = performance.now();
-// CT console.log("Call to doSomething took " + (t1 - t0) + " milliseconds.");
-
-// https://developer.mozilla.org/en-US/docs/Web/API/Performance/now
-
-//A: (Ilona) I don't know but we can benchmark it.
-//e.g. run both 1 million times, and take system time at the beginning and end to compare.
-// https://stackoverflow.com/questions/2586842/is-ternary-operator-if-else-or-logical-or-faster-in-javascript
-// Note that the ternary operator is usually used for single, short statements
-// and is mostly so as to help a human reader
-
-//Marta
-//BOUT THE FOR LOOPS- Which difference makes if I declare the variable in the loop or outside?
-//The variable will be accessed just in the loop or it can be accessed from the rest of the program as well?
-//So which one is better in terms of programming? which one will be more clean?
-//sorry, no code..still a beginner!
-// https://stackoverflow.com/questions/3684923/javascript-variables-declare-outside-or-inside-loop
-
-var i = 0
-for (; i < 10; i++) {
-  console.log(i)
-}
+//var i = (condition ) ? if true :for (i; i < 10; i++) {
+//  console.log(i)
+//}
 
 for (i = 0; i < 10; i++) {
   console.log(i)
 }
 
-var i = 0;
+//var i = 0;
 var j = "a";
 var food = ["cake"]
 for (; i < 10; i++) {

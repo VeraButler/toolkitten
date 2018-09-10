@@ -1,5 +1,5 @@
-import nltk
-from nltk.corpus import brown
+#import nltk
+#from nltk.corpus import brown
 #cfd = nltk.ConditionalFreqDist(
 #    (genre, word)
 #    for genre in brown.categories()
@@ -44,17 +44,30 @@ from nltk.corpus import brown
 
 #Exercises
 #1
-phrase = ["one", "though", "to", "when", "however"]
+'''phrase = ["one", "though", "to", "when", "however"]
 print(phrase.index('though'))
 phrase.pop(0)
 phrase.sort()
-print(phrase)
+print(phrase)'''
 #2
-from nltk.corpus import gutenberg
+''' from nltk.corpus import gutenberg
+#print(gutenberg.fileids())
 austen = gutenberg.words('austen-persuasion.txt')
 for n in austen:
     num_chars = len(gutenberg.raw(n))
-    num_words = len(austen.words(n))
-    num_sents = len(austen.sents(n))
+    num_words = len(gutenberg.words(n))
+    num_sents = len(gutenberg.sents(n))
     num_vocab = len(set(w.lower() for w in austen(n)))
-    print(num_chars, num_sents, num_vocab, num_words)
+    print(num_chars, num_sents, num_vocab, num_words) '''
+
+#24
+import nltk
+
+def generate_model(cfdist, word, num=15):
+        for i in range(num):
+            print(word, end = " ")
+            word = cfdist[word].max()
+text = nltk.corpus.genesis.words('english-kjv.txt')
+bigrams = nltk.bigrams(text)
+cfd = nltk.corpus.Con
+cfd['living']
